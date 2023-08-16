@@ -2,5 +2,8 @@
 type="text" 
 class="form-control" 
 [placeholder]="placeholder"
-(keyup.enter)="search(txtInput.value)"
+[value]="initialValue"
+(keyup)="onKeyPress(txtInput.value)"
 #txtInput>
+
+<!-- (keyup.enter)="search(txtInput.value)" -->
